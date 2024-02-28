@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: rgb(4, 4, 16);
+    color: white;
+    font-family: cursive;
+    height: 100vh;
+  }
+
+  header {
+    margin: 36px 0;
+    text-align: center;
+    position: relative;
+  }
+
+  header > a {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: white;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .user-input-container > input {
+    width: 400px;
+    height: 36px;
+    outline: none;
+    font-size: large;
+    padding: 16px;
+    border: none;
+  }
+
+  .user-input-container > input:focus {
+    box-shadow: 0 1px 3px white;
+  }
+
+  button {
+    height: 36px;
+    background-color: rgb(4, 4, 16);
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    padding: 0 16px;
+  }
+
+  main button:hover {
+    background-color: white;
+    color: rgb(4, 4, 16);
+  }
+
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .todos-container {
+    width: 470px;
+  }
+
+  .todos-container div {
+    margin: 8px 0;
+    background-color: white;
+    padding: 4px;
+    color: black;
+    border-radius: 5px;
+  }
+
+  .todos-container p {
+    word-break:break-word;
+  }
+
+  .todos-container button {
+    background-color: transparent;
+    color: rgb(241, 75, 75);
+  }
+
+
+.instructions {
+  background-color: white;
+  color: black;
+  width: 500px; 
+  border-radius: 5px;
+  position: absolute;
+  top: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 16px;
+  opacity: 0.95;
+  display: none;
+}
+
+.instr-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-instr {
+  text-decoration: underline;
+  color: red;
+  cursor: pointer;
+}
+
+.instructions li {
+  margin-left: 16px;
+}
+
+.instructions p {
+  margin: 16px 0;
+}
+
+@media (max-width: 500px) {
+  .user-input-container > input {
+    width: 90%;
+  }
+  .todos-container {
+    width: 90%;
+  }
+
+  .instructions {
+    width: 90%;
+  }
+}
+
+@media (max-width: 300px) {
+  .user-input-container > input {
+    width: 70%;
+  }
+
+  .user-input-container > button {
+    padding: 0 6px;
+  }
+}

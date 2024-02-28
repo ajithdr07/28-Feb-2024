@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TODO App</title>
+  </head>
+  <body>
+    <header>
+      <h1>ToDo App</h1>
+      <a href="#" class="instructions-link">Instruction</a>
+    </header>
+    <main>
+      <div class="user-input-container">
+        <input type="text" id="user-input" />
+        <button id="add">ADD</button>
+      </div>
+      <div id="todos" class="todos-container"></div>
+    </main>
+
+    <article class="instructions">
+      <div class="instr-header">
+        <h2>Instructions</h2>
+        <span class="close-instr">close</span>
+      </div>
+      <p>Welcome to my TODO App!</p>
+      <p>Here's what you can do in this app:</p>
+      <ul>
+        <li>You can create a new todo</li>
+        <li>You can delete a todo</li>
+        <li>
+          You can modify the content of any todo by clicking on the text you
+          want to edit
+        </li>
+      </ul>
+
+      <p>
+        All the data is stored in your Local Storage. You can clear it whenever
+        you want to.
+      </p>
+    </article>
+    <script src="index.js"></script>
+  </body>
+</html>
